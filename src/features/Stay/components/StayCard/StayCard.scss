@@ -1,0 +1,12 @@
+.stay {
+  margin-bottom: 5rem;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  &-photo {
+    border-radius: 24px;
+    object-fit: cover;
+    max-height: 27rem;
+    width: 100%;
+  }
+}

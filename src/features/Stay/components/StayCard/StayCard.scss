@@ -9,4 +9,50 @@
     max-height: 27rem;
     width: 100%;
   }
+
+  &-content {
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0 1.2rem;
+
+    font-size: 1.4rem;
+    color: #828282;
+
+    & > *:last-child {
+      margin-left: auto;
+    }
+  }
+
+  &-super-host {
+    text-transform: uppercase;
+    padding: 0.6rem 1rem;
+    border: 1px solid #4f4f4f;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: #4f4f4f;
+    margin-right: 1.1rem;
+  }
+
+  &-beds {
+    margin-left: 0.5rem;
+  }
+
+  &-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #4f4f4f;
+
+    & > svg {
+      color: rgba(235, 87, 87, 0.72);
+    }
+  }
+
+  &-title {
+    color: #333;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
 }

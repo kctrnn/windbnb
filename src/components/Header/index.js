@@ -1,19 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Logo from '../../assets/images/logo.svg';
-import './Header.scss';
 import StayFilter from '../../features/Stay/components/StayFilter';
+import './Header.scss';
 
-const Header = (props) => {
+const Header = () => {
   return (
     <div className='header'>
-      <img src={Logo} alt='logo' style={{ cursor: 'pointer' }} />
+      <a href='/'>
+        <img src={Logo} alt='logo' style={{ cursor: 'pointer' }} />
+      </a>
 
       <StayFilter />
     </div>
   );
 };
-
-Header.propTypes = {};
 
 export default Header;

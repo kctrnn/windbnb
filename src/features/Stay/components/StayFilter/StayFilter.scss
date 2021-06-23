@@ -59,6 +59,11 @@
     padding: 7rem 10.5rem 0;
 
     background-color: #fff;
+
+    @media screen and (max-width: 575px) {
+      min-height: 85vh;
+      padding: 1rem;
+    }
   }
 
   &.active > &-body > &-inner {
@@ -70,6 +75,27 @@
       &.active {
         border-radius: 16px;
         border: 1px solid #333333;
+      }
+    }
+
+    @media screen and (max-width: 575px) {
+      flex-direction: column;
+      height: 80vh;
+
+      & > * {
+        width: 100%;
+      }
+
+      & > *:first-child {
+        border-bottom: 1px solid #f2f2f2;
+      }
+
+      & > *:not(:last-child) {
+        border-right: 0;
+      }
+
+      & > *:last-child {
+        margin-top: auto;
       }
     }
   }

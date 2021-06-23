@@ -8,4 +8,10 @@
   & > * {
     flex-basis: calc(100% / 3);
   }
+
+  @media screen and (max-width: 575px) {
+    & > * {
+      flex-basis: 100%;
+    }
+  }
 }

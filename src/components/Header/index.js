@@ -6,7 +6,7 @@ import './Header.scss';
 const Header = () => {
   return (
     <div className='header'>
-      <a href='/'>
+      <a href='/' className='header-logo'>
         <img src={Logo} alt='logo' style={{ cursor: 'pointer' }} />
       </a>
 
